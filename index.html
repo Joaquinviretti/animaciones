@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>iFix</title>
 </head>
@@ -51,21 +52,21 @@
         <h2>¿En qué te podemos ayudar?</h2>
 
         <div class="cardsServicios">
-            <div class="card">
+            <div data-aos="fade-up-right" class="card">
                 <h3>Reparaciones y garantías</h3>
                 <p>Somos expertos en reparaciones</p>
                 <a class="button" href="./pages/servicios.html">Más información</a>
             </div>
 
             <!-- Bloque -->
-            <div class="card">
+            <div data-aos="fade-up-top" class="card">
                 <!-- Elemento -->
                 <h3 class="card__titulo">Cambio de batería</h3>
                 <p class="card__descripcion">¿La batería te dura cada vez menos?</p>
                 <a class= "card__button button" href="./pages/servicios.html">Más información</a>
             </div>
 
-            <div class="card">
+            <div data-aos="fade-up-left" class="card">
                 <h3>Servicio técnico a domicilio</h3>
                 <p>Más alcance que nunca</p>
                 <a class="button" href="./pages/servicios.html">Más información</a>
@@ -78,12 +79,12 @@
     <aside>
         <h2>¡Últimas novedades!</h2>
         <div class="novedades">
-            <article class="novedad">
+            <article data-aos="zoom-in" class="novedad">
                 <h3 class="novedad__titulo">Ingresa el iPhone 14</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsum!</p>
                 <img class="novedad__img" src="https://d2r9epyceweg5n.cloudfront.net/stores/002/235/303/products/iphone-14-pro-128gb-silver-usd1533-editada1-c72a85f102d9366ed516691977534302-480-0.png" alt="iphone 14 pro max">
             </article>
-            <article>
+            <article data-aos="zoom-in">
                 <h3>Agendá nuestros horarios</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsum!</p>
                 <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="ícono calendario">
@@ -141,6 +142,10 @@
     </footer>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
